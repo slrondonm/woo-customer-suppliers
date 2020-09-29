@@ -1,0 +1,78 @@
+{
+  "plugin": {
+    "name": "WooCommerce Customers and Suppliers",
+    "version": "0.5.9"
+  },
+  "author": {
+    "name": "Ing Sergio Rondón",
+    "email": "soporte@virtualizate.com.co",
+    "url": "http://virtualizate.com.co",
+    "license": "GPL 2.0+",
+    "copyright": "2020 Grupo Virtualizate"
+  },
+  "public-assets": {
+    "js": "false",
+    "css": "false"
+  },
+  "act-deact": {
+    "actdeact": "true",
+    "uninstall": "true"
+  },
+  "admin-assets": {
+    "admin-js": "true",
+    "admin-css": "true",
+    "settings-js": "false",
+    "settings-css": "false",
+    "admin-page": "true"
+  },
+  "ajax": "true",
+  "git-repo": "true",
+  "grunt": "false",
+  "grumphp": "false",
+  "phpstan": "true",
+  "phpcs": "true",
+  "phpmd": "true",
+  "unit-test": "true",
+  "wpcli": "true",
+  "language-files": "true",
+  "libraries": [
+    "freemius/wordpress-sdk",
+    "julien731/wp-review-me",
+    "origgami/cmb2-grid",
+    "seravo/wp-custom-bulk-actions",
+    "cmb2/cmb2",
+    "johnbillion/extended-cpts",
+    "stevegrunwell/wp-cache-remember",
+    "wpbp/cpt_columns",
+    "wpbp/cronplus",
+    "wpbp/debug",
+    "wpbp/fakepage",
+    "wpbp/language",
+    "wpbp/pointerplus",
+    "wpbp/template",
+    "micropackage/requirements",
+    "wpdesk/wp-notice",
+    "yahnis-elsts/plugin-update-checker",
+    "yoast/i18n-module"
+  ],
+  "snippet": {
+    "backend": [
+      "bubble-notification-pending-cpt",
+      "donate-link-plugin-list",
+      "impexp-settings"
+    ],
+    "frontend": [
+      "body-class",
+      "cpt-search-support",
+      "wp-localize-script",
+      "shortcode",
+      "template-system"
+    ],
+    "system": [
+      "capability-system",
+      "upgrade-procedure",
+      "transient",
+      "rest"
+    ]
+  }
+}
