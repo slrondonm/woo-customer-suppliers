@@ -28,6 +28,8 @@ namespace WooCustomersSuppliers;
  * @subpackage WooCustomersSuppliers/App
  * @author     Soporte Virtualizate <soporte@virtualizate.com.co>
  */
+use WooCustomersSuppliers\Suppliers\Register;
+
 class App
 {
 /**
@@ -109,7 +111,9 @@ class App
      */
     public static function run()
     {
-        new TGMPA();
+		new TGMPA();
+		
+		new Register();
 	}
 	
 	/**
