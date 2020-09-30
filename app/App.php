@@ -102,11 +102,25 @@ class App
 
 	}
 
+	/**
+     * Load plugin classes - Modify as needed, remove features that you don't need.
+     *
+     * @since 0.2.0
+     */
     public static function run()
     {
         new TGMPA();
 	}
 	
+	/**
+     * Append a field prefix as defined in woo-customers-suppliers file
+     *
+     * @param string $field_name The string/field to prefix
+     * @param string $before String to add before the prefix
+     * @param string $after String to add after the prefix
+     * @return string Prefixed string/field value
+     * @since 0.1.0
+     */
 	public function prefix($field_name = null, $before = '', $after = '_')
 	{
 		$prefix = $before . WCSS_PREFIX . $after;
