@@ -1,7 +1,7 @@
 {
     "name": "slrondon/woo-customers-suppliers",
     "type": "wordpress-plugin",
-    "description": "",
+    "description": "WooCommerce Suppliers and Wholesale Clients, is in charge of managing orders to Suppliers and Wholesale Clients in a simpler and more efficient way.",
     "license": "GPL-2.0-or-later",
     "authors": [
         {

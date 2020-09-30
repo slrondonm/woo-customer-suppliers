@@ -1,0 +1,15 @@
+{
+    "prefix": "wcss",
+    "short_name": "WooCommerce Suppliers and Wholesale Clients",
+    "object_cache": {
+      "group": "wordpress_base_plugin_cache",
+      "expire": 86400
+    },
+    "dependencies": {
+      "php": "7.0",
+      "wp": "4.8"
+    },
+    "network": {
+      "default_options_container": "global_settings"
+    }
+  }
