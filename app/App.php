@@ -58,7 +58,9 @@ class App
 	 * @access   protected
 	 * @var      string    $version    The current version of the plugin.
 	 */
-    protected static $version;
+	protected static $version;
+	
+	static $app;
 
     
     public function __construct()
@@ -68,6 +70,8 @@ class App
         } else {
             self::$version = '1.0.0';
         }
+
+		self::$app = new App;
 
         self::$wcss = WCSS_SLUG;
 
@@ -111,9 +115,11 @@ class App
      */
     public static function run()
     {
+		
 		new TGMPA();
 		
 		new Register();
+
 	}
 	
 	/**
@@ -131,4 +137,5 @@ class App
 
 		return $field_name != null ? $prefix . $field_name : $prefix;
 	}
+
 }

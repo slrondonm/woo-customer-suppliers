@@ -36,7 +36,7 @@ if (!defined('WCSS_VERSION')) {
 }
  
 if (!defined('WCSS_SLUG')) {
-	define( 'WCSS_SLUG', 'wc-suppliers' );
+	define( 'WCSS_SLUG', 'wc-customers-suppliers' );
 }
 
 if (!defined('WCSS_PREFIX')) {

@@ -37,7 +37,10 @@ class Register extends App
      */
     public function __construct()
     {
-        add_action('init', [$this, 'register_supplier_cpt', 0]);
+        add_action('admin_menu', [$this, 'admin_menu']);
+
+        add_action('init', [$this, 'register_supplier_cpt'], 0);
+
     }
 
     /**
@@ -76,6 +79,7 @@ class Register extends App
             'items_list_navigation' => __( 'Items list navigation', self::$wcss ),
             'filter_items_list'     => __( 'Filter items list', self::$wcss ),
         );
+
         $args = array(
             'label'                 => __( 'Supplier', self::$wcss ),
             'description'           => __( 'Supplier information pages.', self::$wcss ),
@@ -84,22 +88,35 @@ class Register extends App
             'hierarchical'          => false,
             'public'                => true,
             'show_ui'               => true,
-            'show_in_menu'          => true,
-            'menu_position'         => 5,
-            'menu_icon'             => 'dashicon-store',
-            'show_in_admin_bar'     => true,
-            'show_in_nav_menus'     => true,
+            'show_in_menu'          => self::$wcss,
             'can_export'            => true,
             'has_archive'           => true,
             'exclude_from_search'   => false,
             'publicly_queryable'    => true,
-            'capability_type'       => WCSS_CAPABILITY,
+            'capability_type'       => 'page',
         );
         
         register_post_type( 'supplier', $args );
 
     }
 
+    /**
+     * Admin Menu methods
+     *
+     * @return void
+     */
+    public static function admin_menu() {
+        add_menu_page(
+            __('suppliers and Wholesale Clients', WCSS_SLUG),
+            __('Suppliers and Wholesale Clients', WCSS_SLUG),
+            WCSS_CAPABILITY,
+            WCSS_SLUG,
+            '', // Callback, leave empty
+            'dashicons-store',
+            2// Position
+		);
+
+    }
 
     public function register_form()
     {
