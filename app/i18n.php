@@ -24,7 +24,7 @@ namespace WooCustomersSuppliers;
  * @subpackage WooCustomersSuppliers/i18n
  * @author     Sergio Rondón <soporte@virtualizate.com.co>
  */
-class i18n {
+class i18n extends App {
 
 
 	/**

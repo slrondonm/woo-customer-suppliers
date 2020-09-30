@@ -22,7 +22,7 @@ namespace WooCustomersSuppliers;
  * @subpackage WooCustomersSuppliers/Activator
  * @author     Sergio Rondón <soporte@virtualizate.com.co>
  */
-class Activator {
+class Activator extends App {
 
 	/**
 	 * Short Description. (use period)

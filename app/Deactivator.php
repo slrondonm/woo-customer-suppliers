@@ -21,7 +21,7 @@ namespace WooCustomersSuppliers;
  * @subpackage WooCustomersSuppliers/Deactivator
  * @author     Sergio Rondón <soporte@virtualizate.com.co>
  */
-class Deactivator {
+class Deactivator extends App {
 
 	/**
 	 * Short Description. (use period)

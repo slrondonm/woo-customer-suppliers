@@ -105,5 +105,12 @@ class App
     public static function run()
     {
         new TGMPA();
-    }
+	}
+	
+	public function prefix($field_name = null, $before = '', $after = '_')
+	{
+		$prefix = $before . WCSS_PREFIX . $after;
+
+		return $field_name != null ? $prefix . $field_name : $prefix;
+	}
 }
